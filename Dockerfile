@@ -5,6 +5,7 @@ RUN cd /tmp && \
     wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz && \
     tar -xvf go1.13.linux-amd64.tar.gz && \
     mv go /usr/local && \
+    rm /tmp/go1.13.linux-amd64.tar.gz && \
     export GOROOT=/usr/local/go && \
     export GOPATH=$HOME/go && \
     export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
